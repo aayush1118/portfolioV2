@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Raleway:wght@200;300;400&family=Viaoda+Libre&display=swap");
+:root {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #181616;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 4rem;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  max-width: 400px;
+  font-family: 'Raleway', sans-serif;
+}
+
+main > section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+main > section > h2 {
+  font-size: 3rem;
+  color: #ffa386;
+  font-family: Cinzel;
+  font-style: normal;
+  font-weight: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: lowercase;
+}
+
+.display {
+  font-weight: 300;
+  font-size: 2.4rem;
+  text-transform: lowercase;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.display2 {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+  font-size: 1.6rem;
+  text-align: left;
+  letter-spacing: 0.1px;
+  width: 90%;
+}
+
+section.about {
+  font-family: 'Viaoda Libre', sans-serif;
+  font-size: 3.2rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.5;
+}
+
+section.about p:first-of-type {
+  position: relative;
+}
+
+section.about p:first-of-type::after {
+  content: ',';
+  color: rgba(255, 163, 134, 0.8);
+  position: absolute;
+  font-size: 4.5rem;
+  line-height: 0.95;
+}
+
+section.about .name {
+  font-family: 'Raleway', sans-serif;
+  color: #ffa386;
+}
+
+section.about .title > span {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-weight: 300;
+  margin-left: 0.5ch;
+}
+
+section.projects {
+  grid-gap: 2rem;
+}
+
+section.projects > a:last-of-type {
+  color: rgba(255, 163, 134, 0.651);
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+section.projects > div > button {
+  background: none;
+  border: none;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 1rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+section.projects > div > button .tags,
+section.projects > div > button .description {
+  font-style: italic;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.projects > div > button .tags {
+  grid-column-gap: 1ch;
+  grid-row-gap: 0.5ch;
+}
+
+section.projects > div > button .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 2ch;
+}
+
+section.projects > div > button .links a {
+  color: rgba(255, 163, 134, 0.651);
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+section.experience {
+  grid-gap: 1.8rem;
+}
+
+section.experience > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 1rem;
+}
+
+section.skills > div {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 80%;
+  grid-gap: 1rem;
+}
+
+section.skills > div p {
+  font-weight: 200;
+  font-size: 2.4rem;
+  text-transform: lowercase;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+section.contact > div {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 1rem;
+}
+
+section.contact > div a {
+  font-size: 2.4rem;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}
+/*# sourceMappingURL=styles.css.map */
