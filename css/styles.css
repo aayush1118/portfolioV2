@@ -19,7 +19,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 4rem;
 }
 
 main {
@@ -36,6 +35,7 @@ main {
   width: 80%;
   max-width: 400px;
   font-family: 'Raleway', sans-serif;
+  margin-top: 4rem;
 }
 
 main > section {
@@ -120,7 +120,7 @@ section.projects {
   grid-gap: 2rem;
 }
 
-section.projects > a:last-of-type {
+section.projects > div:last-of-type > a {
   color: rgba(255, 163, 134, 0.651);
   text-decoration: none;
   font-size: 1.4rem;
@@ -224,5 +224,16 @@ section.contact > div a {
   font-weight: 200;
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
+}
+
+body > .scroll {
+  width: 1.5px;
+  background: rgba(255, 163, 134, 0.651);
+  position: fixed;
+  right: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 /*# sourceMappingURL=styles.css.map */
