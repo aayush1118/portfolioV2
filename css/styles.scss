@@ -29,7 +29,6 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	// align-items: flex-end;
 	width: 80%;
 	max-width: 400px;
 	font-family: 'Raleway', sans-serif;
@@ -37,7 +36,6 @@ main {
 	& > section {
 		display: flex;
 		flex-direction: column;
-		// align-items: flex-end;
 		margin-bottom: 3rem;
 		& > h2 {
 			font-size: 3rem;
@@ -47,7 +45,6 @@ main {
 			font-weight: normal;
 			display: flex;
 			align-items: center;
-			// justify-content: flex-end;
 			text-transform: lowercase;
 		}
 	}
@@ -73,8 +70,10 @@ section.about {
 	font-size: 3.2rem;
 	color: $primary3;
 	line-height: 1.5;
+	align-items: start;
 	p:first-of-type {
 		position: relative;
+		transform-origin: center;
 		&::after {
 			content: ',';
 			color: $highlight2;

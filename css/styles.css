@@ -85,10 +85,15 @@ section.about {
   font-size: 3.2rem;
   color: rgba(255, 255, 255, 0.5);
   line-height: 1.5;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 section.about p:first-of-type {
   position: relative;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 section.about p:first-of-type::after {
