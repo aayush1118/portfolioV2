@@ -226,13 +226,6 @@ section.contact > div a {
   text-decoration: none;
 }
 
-body > .scroll {
-  width: 1.5px;
-  background: rgba(255, 163, 134, 0.651);
-  position: fixed;
-  right: 0;
-}
-
 ::-webkit-scrollbar {
   display: none;
 }

@@ -48,7 +48,7 @@ projectsAnimate.play();
 // observer.observe(projects);
 // observer.observe(experience);
 
-window.addEventListener('scroll', () => {
-	document.querySelector('body>.scroll').style.height =
-		window.pageYOffset + 250 + 'px';
-});
+// window.addEventListener('scroll', () => {
+// 	document.querySelector('body>.scroll').style.height =
+// 		window.pageYOffset + 250 + 'px';
+// });
