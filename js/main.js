@@ -15,14 +15,14 @@ start
 	.from(aboutElements[1], { opacity: 0, x: -10 }, '+=0.5')
 	.from(aboutElements[2], { opacity: 0, x: -10 })
 	.from(aboutElements[3], { opacity: 0, scale: 1.05 })
-	.to(aboutElements[0], { opacity: 0, height: 0 }, '+=1')
+	.to(aboutElements[0], { opacity: 0, height: 0 }, '+=0.8')
 	.to(aboutElements[1], { opacity: 0, height: 0 });
 
 //section loading
 const projectsAnimate = gsap.timeline({
 	duration: 1,
 	ease: 'power1.out',
-	delay: 2.5,
+	delay: 4,
 });
 
 projectsAnimate
@@ -32,23 +32,3 @@ projectsAnimate
 //execution
 start.play();
 projectsAnimate.play();
-
-//intersection observer
-// let options = {
-// 	rootMargin: '0px',
-// 	threshold: 1.0,
-// };
-
-// let observer = new IntersectionObserver((entries, observer) => {
-// 	entries.forEach((entry) => {
-// 		console.log(entry);
-// 	});
-// }, options);
-
-// observer.observe(projects);
-// observer.observe(experience);
-
-// window.addEventListener('scroll', () => {
-// 	document.querySelector('body>.scroll').style.height =
-// 		window.pageYOffset + 250 + 'px';
-// });
