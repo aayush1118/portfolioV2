@@ -212,11 +212,7 @@ section.contact > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  grid-gap: 1rem;
+  grid-gap: 3rem;
 }
 
 section.contact > div a {
@@ -224,6 +220,19 @@ section.contact > div a {
   font-weight: 200;
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+}
+
+section.contact > div a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+section.contact > div a img {
+  height: 4rem;
 }
 
 ::-webkit-scrollbar {
